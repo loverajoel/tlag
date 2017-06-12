@@ -1,1 +1,31 @@
-var _0xc863=["\x68\x74\x74\x70\x3A\x2F\x2F\x77\x77\x77\x2E\x6C\x6F\x76\x65\x72\x61\x6A\x6F\x65\x6C\x2E\x63\x6F\x6D\x2F\x74\x6C\x61\x67\x2F","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x52\x65\x61\x63\x74\x46\x6F\x72\x42\x65\x67\x69\x6E\x6E\x65\x72\x73\x2E\x63\x6F\x6D\x2F\x66\x72\x69\x65\x6E\x64\x2F\x4C\x4F\x56\x45","\x72\x65\x61\x63\x74\x2E\x70\x6E\x67","\x72\x65\x61\x63\x74\x2D\x72\x2E\x70\x6E\x67","\x61","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x68\x72\x65\x66","\x75\x72\x6C","\x73\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65","\x73\x74\x79\x6C\x65","\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64\x2D\x69\x6D\x61\x67\x65\x3A\x20\x75\x72\x6C\x28","\x69\x6D\x67","\x29\x3B","\x63\x6C\x61\x73\x73","\x6C\x6F\x76\x65","\x74\x61\x72\x67\x65\x74","\x5F\x62\x6C\x61\x6E\x6B","\x6F\x6E\x43\x6C\x69\x63\x6B","\x67\x61\x28\x27\x73\x65\x6E\x64\x27\x2C\x20\x27\x65\x76\x65\x6E\x74\x27\x2C\x20\x27\x6C\x6F\x76\x65\x27\x2C\x20","\x61\x70\x70\x65\x6E\x64\x43\x68\x69\x6C\x64","\x2E\x70\x6F\x73\x74\x2D\x68\x65\x61\x64\x65\x72","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x69\x6D\x67\x5F\x72","\x6C\x6F\x76\x65\x5F\x72","\x67\x61\x28\x27\x73\x65\x6E\x64\x27\x2C\x20\x27\x65\x76\x65\x6E\x74\x27\x2C\x20\x27\x6C\x6F\x76\x65\x5F\x72\x27\x2C\x20"];var baselove=_0xc863[0];var list=[{id:1,url:_0xc863[1],img:_0xc863[2],img_r:_0xc863[3]}];function render(_0xc26dx4){var _0xc26dx5=list[_0xc26dx4];var _0xc26dx6=document[_0xc863[5]](_0xc863[4]);_0xc26dx6[_0xc863[8]](_0xc863[6],_0xc26dx5[_0xc863[7]]);_0xc26dx6[_0xc863[8]](_0xc863[9],_0xc863[10]+ baselove+ _0xc26dx5[_0xc863[11]]+ _0xc863[12]);_0xc26dx6[_0xc863[8]](_0xc863[13],_0xc863[14]);_0xc26dx6[_0xc863[8]](_0xc863[15],_0xc863[16]);_0xc26dx6[_0xc863[8]](_0xc863[17],_0xc863[18]+ _0xc26dx4+ _0xc863[12]);document[_0xc863[21]](_0xc863[20])[_0xc863[19]](_0xc26dx6);var _0xc26dx7=document[_0xc863[5]](_0xc863[4]);_0xc26dx7[_0xc863[8]](_0xc863[6],_0xc26dx5[_0xc863[7]]);_0xc26dx7[_0xc863[8]](_0xc863[9],_0xc863[10]+ baselove+ _0xc26dx5[_0xc863[22]]+ _0xc863[12]);_0xc26dx7[_0xc863[8]](_0xc863[13],_0xc863[23]);_0xc26dx7[_0xc863[8]](_0xc863[15],_0xc863[16]);_0xc26dx7[_0xc863[8]](_0xc863[17],_0xc863[24]+ _0xc26dx4+ _0xc863[12]);document[_0xc863[21]](_0xc863[20])[_0xc863[19]](_0xc26dx7)}render(0)
+ var baselove = 'http://www.loverajoel.com/tlag/'
+
+  var list = [
+    {
+      id: 1,
+      url: 'https://ReactForBeginners.com/friend/LOVE',
+      img: 'react.png',
+      img_r: 'react-r.png'
+    }
+  ];
+
+  function render(id) {
+    var item = list[id];
+    var a = document.createElement('a');
+    a.setAttribute('href', item.url);
+    a.setAttribute('style', 'background-image: url(' + baselove + item.img + ');');
+    a.setAttribute('class', 'love');
+    a.setAttribute('target', '_blank');
+    a.setAttribute('onClick', 'ga(\'send\', \'event\', \'love\', '+id+');')
+    document.querySelector('.post-header').appendChild(a);
+
+    var a_r = document.createElement('a');
+    a_r.setAttribute('href', item.url);
+    a_r.setAttribute('style', 'background-image: url(' + baselove + item.img_r + ');');
+    a_r.setAttribute('class', 'love_r');
+    a_r.setAttribute('target', '_blank');
+    a_r.setAttribute('onClick', 'ga(\'send\', \'event\', \'love_r\', '+id+');')
+    document.querySelector('.post-header').appendChild(a_r);
+  }
+
+  render(0);
